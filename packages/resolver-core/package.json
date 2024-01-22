@@ -4,7 +4,6 @@
   "version": "1.6.0",
   "description": "Vanilla JS/TS Library for resolving Domains issued by AZERO.ID",
   "homepage": "https://azero.id",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azero-id/resolver.git",
