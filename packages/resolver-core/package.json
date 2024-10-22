@@ -1,7 +1,7 @@
 {
   "name": "@azns/resolver-core",
   "author": "AZERO.ID <hello@azero.id> (https://azero.id)",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Vanilla JS/TS Library for resolving Domains issued by AZERO.ID",
   "homepage": "https://azero.id",
   "repository": {
@@ -17,23 +17,15 @@
       "default": "./dist/index.js"
     }
   },
-  "files": [
-    "package.json",
-    "LICENSE",
-    "README.md",
-    "dist"
-  ],
+  "files": ["package.json", "LICENSE", "README.md", "dist"],
   "engines": {
-    "node": ">=16 <=18",
-    "pnpm": "8"
+    "node": ">=18"
   },
+  "packageManager": "pnpm@9.6.0",
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
-    "lint": "prettier . --check && eslint",
-    "lint:fix": "prettier . --write && eslint --fix",
-    "lint:format": "prettier . --write",
-    "typecheck": "tsc --noEmit"
+    "test": "vitest --run"
   },
   "peerDependencies": {
     "@polkadot/api": ">=10",
@@ -58,5 +50,9 @@
     "dapps",
     "wallet",
     "web3"
-  ]
+  ],
+  "devDependencies": {
+    "@types/utf-8-validate": "~5.0.2",
+    "vitest": "^2.0.4"
+  }
 }
